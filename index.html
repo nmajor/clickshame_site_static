@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | Clickshame</title>
+    <title>Home | clickshame.com</title>
 
-    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!-- Bootstrap theme CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/rcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,10 +19,9 @@
   </head>
   <body>
 
-
     
 
-<section id="hello">
+<section id="hello-wrapper">
   <div class="container">
 
     <div class="row">
@@ -39,19 +34,32 @@
     </div>
 
     <div class="row">
-      <div id="stats">
-        <span class="stat">10,438</span> users have reported <span class="stat">103,248</span> clickbait pages across <span class="stat">52,299</span> domains
-      </div>
+      <div id="intro">Help fight clickbait!</div>
     </div>
 
-    <div class="row">
-      <div id="intro">Help fight clickbait!</div>
+    <div class="row hello-chrome-extension">
+      
+<a class="chrome-extension-link" href="https://chrome.google.com/webstore/detail/click-shame/gdpbbpbajgcoacickfjfjnkebimlogne">
+  <img src="/assets/images/chrome-logo.png">
+  Download The Chrome Extension
+</a>
     </div>
   </div>
 </section>
 
 
-<section>
+<section id="stats-wrapper">
+  <div class="container">
+    <div class="row">
+      <div id="stats">
+        <span class="stat">10,438</span> users have reported <span class="stat">103,248</span> clickbait pages across <span class="stat">52,299</span> domains
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="ticker-wrapper">
   <div class="container">
     <div class="row">
       <h1>Tired of stuff like this?</h1>
@@ -78,24 +86,39 @@
 </section>
 
 
-<section id="instructions">
+<section id="extensions-wrapper">
+  <div class="container">
+    <div class="row">
+      <div id="extension">
+        
+<a class="chrome-extension-link" href="https://chrome.google.com/webstore/detail/click-shame/gdpbbpbajgcoacickfjfjnkebimlogne">
+  <img src="/assets/images/chrome-logo.png">
+  Download The Chrome Extension
+</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="instructions-wrapper">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <h2>Step One</h2>
-        <div>Install the Chrome extension.</div>
-        <img src="/assets/images/step1.png">
-      </div>
-
-      <div class="col-md-4">
-        <h2>Step Two</h2>
-        <div>Report clickbait.</div>
+        <h2>Report Clickbait</h2>
+        <p>When you click on something you think is clickbait, warn others by reporting it through the extension.</p>
         <img src="/assets/images/step2.png">
       </div>
 
       <div class="col-md-4">
-        <h2>Step Three</h2>
-        <div>Hover to see the score. Dont give them a click.</div>
+        <h2>Identify Bad Links</h2>
+        <p>Links with a clickshame score are highlighted so they are easy to identify.</p>
+        <img src="/assets/images/step3.png">
+      </div>
+
+      <div class="col-md-4">
+        <h2>Dont Click</h2>
+        <p>Hover over the link to get the clickshame score and user comments. Dont waste your time on bad links.</p>
         <img src="/assets/images/step3.png">
       </div>
     </div>
@@ -106,9 +129,11 @@
     <footer style="margin-bottom: 100em;">
 </footer>
 
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/jquery.ui.core.min.js"></script>
+    <script src="assets/js/jquery.ui.widget.min.js"></script>
+    <script src="assets/js/jquery.ui.rcarousel.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery-endless-scroll.min.js"></script>
     <script src="assets/js/theme.min.js"></script>
   </body>
 </html>
