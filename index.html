@@ -36,19 +36,44 @@
 
     <div class="row">
       <div class="col-xs-12">
-        <div id="intro">Help fight clickbait!</div>
+        <div id="intro">Report clickbait!</div>
       </div>
     </div>
 
-    <div class="row hello-chrome-extension">
-      
-<a class="chrome-extension-link" href="https://chrome.google.com/webstore/detail/click-shame/gdpbbpbajgcoacickfjfjnkebimlogne">
-  <img src="/assets/images/chrome-logo.png">
-  Download The Chrome Extension
-</a>
+  </div>
+</section>
+
+
+<section id="report-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="report">
+          <div class="report-data-form">
+            <div class="control">
+              <input type=text class="url" id="report-url" placeholder="Link">
+            </div>
+            <div class="control">
+              <textarea class="comment" id="report-comment" maxlength="140" placeholder="Add a spoiler. Save a click..."></textarea>
+            </div>
+            <div class="control">
+              <input type="hidden" id="report-captcha-response">
+              <button class="btn btn-lg btn-pop btn-block" class="submit" id="report-submit">Submit</button>
+            </div>
+          </div>
+
+          <div class="report-recaptcha-form">
+            <div class="control">
+              <div id="report-recaptcha"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 
 
 <section id="stats-wrapper">
@@ -213,6 +238,9 @@
     </div>
   </div>
 </footer>
+
+    <!-- Google Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=loadCaptcha&render=explicit" async defer></script>
 
     <script src="assets/js/jquery-1.11.3.min.js"></script>
     <script src="assets/js/jquery.ui.core.min.js"></script>
